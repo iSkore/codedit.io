@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="includes/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="includes/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="includes/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="includes/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="includes/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="includes/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="includes/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="includes/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="includes/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="includes/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="includes/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="includes/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="includes/favicon/favicon-16x16.png">
+    <link rel="manifest" href="includes/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="includes/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="includes/css/bootstrap.min.css">
+    <link rel="stylesheet" href="includes/font/source-code-pro.css">
+    <link rel="stylesheet" href="includes/css/style.css">
+    <link rel="stylesheet" href="includes/css/highlight.min.css">
+    <link rel="stylesheet" href="includes/css/codemirror/codemirror.css">
+    <link rel="stylesheet" href="includes/css/codemirror/3024-day.css">
+    <link rel="stylesheet" href="includes/css/codemirror/3024-night.css">
+    <link rel="stylesheet" href="includes/css/codemirror/abcdef.css">
+    <link rel="stylesheet" href="includes/css/codemirror/ambiance.css">
+    <link rel="stylesheet" href="includes/css/codemirror/base16-dark.css">
+    <link rel="stylesheet" href="includes/css/codemirror/bespin.css">
+    <link rel="stylesheet" href="includes/css/codemirror/base16-light.css">
+    <link rel="stylesheet" href="includes/css/codemirror/blackboard.css">
+    <link rel="stylesheet" href="includes/css/codemirror/cobalt.css">
+    <link rel="stylesheet" href="includes/css/codemirror/colorforth.css">
+    <link rel="stylesheet" href="includes/css/codemirror/dracula.css">
+    <link rel="stylesheet" href="includes/css/codemirror/duotone-dark.css">
+    <link rel="stylesheet" href="includes/css/codemirror/duotone-light.css">
+    <link rel="stylesheet" href="includes/css/codemirror/eclipse.css">
+    <link rel="stylesheet" href="includes/css/codemirror/elegant.css">
+    <link rel="stylesheet" href="includes/css/codemirror/erlang-dark.css">
+    <link rel="stylesheet" href="includes/css/codemirror/hopscotch.css">
+    <link rel="stylesheet" href="includes/css/codemirror/icecoder.css">
+    <link rel="stylesheet" href="includes/css/codemirror/isotope.css">
+    <link rel="stylesheet" href="includes/css/codemirror/lesser-dark.css">
+    <link rel="stylesheet" href="includes/css/codemirror/liquibyte.css">
+    <link rel="stylesheet" href="includes/css/codemirror/material.css">
+    <link rel="stylesheet" href="includes/css/codemirror/mbo.css">
+    <link rel="stylesheet" href="includes/css/codemirror/mdn-like.css">
+    <link rel="stylesheet" href="includes/css/codemirror/midnight.css">
+    <link rel="stylesheet" href="includes/css/codemirror/monokai.css">
+    <link rel="stylesheet" href="includes/css/codemirror/neat.css">
+    <link rel="stylesheet" href="includes/css/codemirror/neo.css">
+    <link rel="stylesheet" href="includes/css/codemirror/night.css">
+    <link rel="stylesheet" href="includes/css/codemirror/panda-syntax.css">
+    <link rel="stylesheet" href="includes/css/codemirror/paraiso-dark.css">
+    <link rel="stylesheet" href="includes/css/codemirror/paraiso-light.css">
+    <link rel="stylesheet" href="includes/css/codemirror/pastel-on-dark.css">
+    <link rel="stylesheet" href="includes/css/codemirror/railscasts.css">
+    <link rel="stylesheet" href="includes/css/codemirror/rubyblue.css">
+    <link rel="stylesheet" href="includes/css/codemirror/seti.css">
+    <link rel="stylesheet" href="includes/css/codemirror/solarized.css">
+    <link rel="stylesheet" href="includes/css/codemirror/the-matrix.css">
+    <link rel="stylesheet" href="includes/css/codemirror/tomorrow-night-bright.css">
+    <link rel="stylesheet" href="includes/css/codemirror/tomorrow-night-eighties.css">
+    <link rel="stylesheet" href="includes/css/codemirror/ttcn.css">
+    <link rel="stylesheet" href="includes/css/codemirror/twilight.css">
+    <link rel="stylesheet" href="includes/css/codemirror/vibrant-ink.css">
+    <link rel="stylesheet" href="includes/css/codemirror/xq-dark.css">
+    <link rel="stylesheet" href="includes/css/codemirror/xq-light.css">
+    <link rel="stylesheet" href="includes/css/codemirror/yeti.css">
+    <link rel="stylesheet" href="includes/css/codemirror/zenburn.css">
+
+    <link rel="stylesheet" href="includes/css/codemirror/show-hint.css">
+</head>
+
+<body>
+<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="https://codedit.io/">codedit.io</a>
+    <a class="text-muted">v0.0.4</a>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <!--<ul class="navbar-nav mr-auto">-->
+            <!--<li class="nav-item active">-->
+                <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+                <!--<a class="nav-link" href="#">Link</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item">-->
+                <!--<a class="nav-link disabled" href="#">Disabled</a>-->
+            <!--</li>-->
+            <!--<li class="nav-item dropdown">-->
+                <!--<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>-->
+                <!--<div class="dropdown-menu" aria-labelledby="dropdown01">-->
+                    <!--<a class="dropdown-item" href="#">Action</a>-->
+                    <!--<a class="dropdown-item" href="#">Another action</a>-->
+                    <!--<a class="dropdown-item" href="#">Something else here</a>-->
+                <!--</div>-->
+            <!--</li>-->
+        <!--</ul>-->
+
+        <div class="btn-group">
+            <button type="button" class="btn btn-danger">Theme</button>
+            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only">Toggle Dropdown</span>
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+        </div>
+        <p>Select a theme:
+            <select onchange="selectTheme()" id="select">
+                <option selected>default</option>
+                <option>3024-day</option>
+                <option>3024-night</option>
+                <option>abcdef</option>
+                <option>ambiance</option>
+                <option>base16-dark</option>
+                <option>base16-light</option>
+                <option>bespin</option>
+                <option>blackboard</option>
+                <option>cobalt</option>
+                <option>colorforth</option>
+                <option>dracula</option>
+                <option>duotone-dark</option>
+                <option>duotone-light</option>
+                <option>eclipse</option>
+                <option>elegant</option>
+                <option>erlang-dark</option>
+                <option>hopscotch</option>
+                <option>icecoder</option>
+                <option>isotope</option>
+                <option>lesser-dark</option>
+                <option>liquibyte</option>
+                <option>material</option>
+                <option>mbo</option>
+                <option>mdn-like</option>
+                <option>midnight</option>
+                <option>monokai</option>
+                <option>neat</option>
+                <option>neo</option>
+                <option>night</option>
+                <option>panda-syntax</option>
+                <option>paraiso-dark</option>
+                <option>paraiso-light</option>
+                <option>pastel-on-dark</option>
+                <option>railscasts</option>
+                <option>rubyblue</option>
+                <option>seti</option>
+                <option>solarized dark</option>
+                <option>solarized light</option>
+                <option>the-matrix</option>
+                <option>tomorrow-night-bright</option>
+                <option>tomorrow-night-eighties</option>
+                <option>ttcn</option>
+                <option>twilight</option>
+                <option>vibrant-ink</option>
+                <option>xq-dark</option>
+                <option>xq-light</option>
+                <option>yeti</option>
+                <option>zenburn</option>
+            </select>
+        </p>
+        <div class="form-inline my-2 my-lg-0 ml-auto">
+            <button class="btn btn-outline-success my-2 my-sm-0" onclick="compile()">
+                <span class="glyphicons glyphicons-play"></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<div id="main" class="container-fluid">
+    <div class="row">
+        <div id="editor">
+            <textarea id="input">//hello there everyone
+
+let x = 3;
+let y = 7;
+
+class Mathematics {
+    constructor(){}
+
+    add( a, b )
+    {
+        return a + b;
+    }
+}
+
+/**
+ * Function `add`
+ * comment
+ */
+ const
+    math = new Mathematics(),
+    result = math.add( x, y );
+
+console.log( result );
+
+console.log( 0..toString( 2 ) );
+console.info( 1..toString( 2 ) );
+console.warn( 2..toString( 2 ) );
+console.error( 4..toString( 2 ) );
+console.log( 8..toString( 2 ) );
+console.info( 16..toString( 2 ) );
+console.warn( 32..toString( 2 ) );
+</textarea>
+        </div>
+        <div id="console">
+            <pre><code id="output" class="html"></code></pre>
+        </div>
+    </div>
+</div>
+
+<script src="includes/js/jquery-3.1.1.min.js"></script>
+<script src="includes/js/tether.min.js"></script>
+<script src="includes/js/bootstrap.min.js"></script>
+<script src="includes/js/ie.js"></script>
+<!--<script src="includes/js/codemirror/highlight.min.js"></script>-->
+
+<script src="includes/js/codemirror/codemirror.js"></script>
+<script src="includes/js/codemirror/show-hint.js"></script>
+<script src="includes/js/codemirror/javascript-hint.js"></script>
+<script src="includes/js/codemirror/javascript.js"></script>
+<script src="includes/js/codemirror/active-line.js"></script>
+<script src="includes/js/codemirror/matchbrackets.js"></script>
+
+<script src="includes/js/Generator.js"></script>
+<script src="includes/js/Executor.js"></script>
+<script type="text/javascript">
+'use strict';
+
+var compile, selectTheme;
+
+$( document ).ready( () => {
+
+    compile = () => {
+        $( '#output' ).html( '' );
+        const exec = new Executor( editor.getValue() );
+        exec.start();
+    };
+
+//    $( 'pre code' ).each( ( i, block ) => hljs.highlightBlock( block ) );
+
+    const editor = CodeMirror.fromTextArea( document.getElementById( 'input' ), {
+        extraKeys: {
+            'Ctrl-Space': 'autocomplete',
+        },
+        maxHighlightLength: Infinity,
+        matchBrackets: true,
+        lineNumbers: true,
+        indentWithTabs: true,
+        tabSize: 4,
+        indentUnit: 4,
+        viewportMargin: 100,
+        mode: {
+            name: 'javascript',
+            json: true,
+            globalVars: true
+        }
+    } );
+
+    editor.setSize( $( '#editor' ).width(), $( '#editor' ).height() );
+
+    var input = document.getElementById( 'select' );
+
+    selectTheme = () => {
+        var theme = input.options[input.selectedIndex].textContent;
+        editor.setOption("theme", theme);
+        location.hash = "#" + theme;
+    }
+    var choice = (location.hash && location.hash.slice(1)) ||
+        (document.location.search &&
+        decodeURIComponent(document.location.search.slice(1)));
+    if (choice) {
+        input.value = choice;
+        editor.setOption("theme", choice);
+    }
+    CodeMirror.on(window, "hashchange", function() {
+        var theme = location.hash.slice( 1 );
+        if( theme ) {
+            input.value = theme;
+            selectTheme();
+        }
+    } );
+} );
+
+</script>
+</body>
+
+</html>
