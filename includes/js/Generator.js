@@ -62,7 +62,7 @@ function toPromise( obj ) {
         return obj;
     if( isGeneratorFunction( obj ) || isGenerator( obj ) )
         return generator.call( this, obj );
-    if( 'function' == typeof obj )
+    if( typeof obj === 'function' )
         return thunkToPromise.call( this, obj );
     if( Array.isArray( obj ) )
         return arrayToPromise.call( this, obj );
